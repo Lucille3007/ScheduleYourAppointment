@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343997244476",
+    "project_id": "scheduleyourappointment-533b3",
+    "storage_bucket": "scheduleyourappointment-533b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343997244476:android:97b0566644fbf3e4980f39",
+        "android_client_info": {
+          "package_name": "com.example.scheduleyourappointment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgYJMl0xW6ooiWvqfQ0U6dWgtm680Y61M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

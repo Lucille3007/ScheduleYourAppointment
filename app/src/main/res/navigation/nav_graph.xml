@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.scheduleyourappointment.Fragments.LoginFragment"
+        android:label="login_layout"
+        tools:layout="@layout/login_layout" >
+        <action
+            android:id="@+id/action_loginFragment_to_scheduleFragment"
+            app:destination="@id/scheduleFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_managerLoginFragment"
+            app:destination="@id/managerLoginFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_openHoursFragment"
+            app:destination="@id/openHoursFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/scheduleFragment"
+        android:name="com.example.scheduleyourappointment.Fragments.ScheduleFragment"
+        android:label="schedule_layout"
+        tools:layout="@layout/schedule_layout" >
+        <action
+            android:id="@+id/action_scheduleFragment_self"
+            app:destination="@id/scheduleFragment" />
+        <action
+            android:id="@+id/action_scheduleFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/managerHomePageFragment"
+        android:name="com.example.scheduleyourappointment.Fragments.ManagerHomePageFragment"
+        android:label="manager_home_page_layout"
+        tools:layout="@layout/manager_home_page_layout" >
+        <action
+            android:id="@+id/action_managerHomePageFragment_to_manageOpenHoursFragment"
+            app:destination="@id/manageOpenHoursFragment" />
+        <action
+            android:id="@+id/action_managerHomePageFragment_to_manageAvailableAppsFragment"
+            app:destination="@id/manageAvailableAppsFragment" />
+        <action
+            android:id="@+id/action_managerHomePageFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/managerLoginFragment"
+        android:name="com.example.scheduleyourappointment.Fragments.ManagerLoginFragment"
+        android:label="manager_login_layout"
+        tools:layout="@layout/manager_login_layout" >
+        <action
+            android:id="@+id/action_managerLoginFragment_to_managerHomePageFragment"
+            app:destination="@id/managerHomePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/openHoursFragment"
+        android:name="com.example.scheduleyourappointment.Fragments.OpenHoursFragment"
+        android:label="open_hours_layout"
+        tools:layout="@layout/open_hours_layout" >
+        <action
+            android:id="@+id/action_openHoursFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageOpenHoursFragment"
+        android:name="com.example.scheduleyourappointment.Fragments.ManageOpenHoursFragment"
+        android:label="manage_open_hours_layout"
+        tools:layout="@layout/manage_open_hours_layout" >
+        <action
+            android:id="@+id/action_manageOpenHoursFragment_to_managerHomePageFragment"
+            app:destination="@id/managerHomePageFragment" />
+        <action
+            android:id="@+id/action_manageOpenHoursFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageAvailableAppsFragment"
+        android:name="com.example.scheduleyourappointment.Fragments.ManageAvailableAppsFragment"
+        android:label="manage_available_apps_lable"
+        tools:layout="@layout/manage_available_apps_lable" >
+        <action
+            android:id="@+id/action_manageAvailableAppsFragment_to_addAppointmentFragment"
+            app:destination="@id/addAppointmentFragment" />
+        <action
+            android:id="@+id/action_manageAvailableAppsFragment_to_managerHomePageFragment"
+            app:destination="@id/managerHomePageFragment" />
+        <action
+            android:id="@+id/action_manageAvailableAppsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAppointmentFragment"
+        android:name="com.example.scheduleyourappointment.Fragments.AddAppointmentFragment"
+        android:label="add_appointment_layout"
+        tools:layout="@layout/add_appointment_layout" >
+        <action
+            android:id="@+id/action_addAppointmentFragment_to_manageAvailableAppsFragment"
+            app:destination="@id/manageAvailableAppsFragment" />
+    </fragment>
+</navigation>
